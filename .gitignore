@@ -1,1 +1,7 @@
 .idea/
+checkers_game_backend.iml
+
+node_modules/
+pnpm-lock.yaml
+
+out/

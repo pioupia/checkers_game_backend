@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "author": "Pioupia",
   "license": "MIT",
+  "main": "out/index.js",
+  "scripts": {
+    "start": "tsc && node ."
+  },
   "dependencies": {
+    "ws": "^8.13.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.4"
   }
 }
