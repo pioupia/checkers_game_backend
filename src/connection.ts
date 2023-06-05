@@ -18,4 +18,18 @@ export default class Connection {
             0b0
         )
     }
+
+    public send(data: response_types) {
+        switch (data) {
+            case 'disconnect':
+                this.ws.send(RESPONSE_CODE.close_connection);
+                break;
+        }
+    }
+}
+
+type response_types = 'disconnect';
+
+enum RESPONSE_CODE {
+    close_connection
 }
